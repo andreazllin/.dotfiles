@@ -1,0 +1,17 @@
+[pull]
+	rebase = true
+[core]
+	ignorecase = false
+	editor = code --wait
+[user]
+	name = Andrea Lin
+	email = andrea.lin3110@gmail.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[url "git@github.com:"]
+	insteadOf = git://github.com/
+[init]
+	defaultBranch = main
